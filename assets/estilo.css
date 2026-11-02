@@ -127,3 +127,8 @@ hr{border:0;height:12px;margin:40px 0;background:repeating-linear-gradient(90deg
 @keyframes quadros8{to{background-position:calc(var(--w) * -8) 0}}
 @keyframes quadros4{to{background-position:calc(var(--w) * -4) 0}}
 @media (prefers-reduced-motion:reduce){.sprite{animation:none}}
+/* Respiração para quem ainda não tem animação do jogo */
+.respira{transform-origin:50% 92%;animation:respira 2.4s steps(4,jump-none) infinite}
+@keyframes respira{0%,100%{transform:scale(1,1)}50%{transform:scale(1.015,1.04) translateY(-1px)}}
+.personagem:nth-child(3n) .respira{animation-delay:-.8s}.personagem:nth-child(3n+1) .respira{animation-delay:-1.6s}
+@media (prefers-reduced-motion:reduce){.respira{animation:none}}
