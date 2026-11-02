@@ -1,28 +1,68 @@
 <!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Lumeria Studio</title>
-<meta name="description" content="Lumeria Studio: estúdio independente de jogos do mundo de Lumeria.">
+<meta name="description" content="Lumeria Studio: estúdio independente de jogos em pixel art ambientados no planeta Lumeria.">
+<meta property="og:title" content="Lumeria Studio"><meta property="og:image" content="https://lumeriastudio.github.io/assets/img/cenas/lumeria.png">
+<link rel="icon" href="assets/img/personagens/aeli.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Pixelify+Sans:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/estilo.css"></head>
 <body>
-<header><a class="marca" href="./">Lumeria Studio</a><nav><a href="#jogos">Jogos</a><a href="#contato">Contato</a></nav></header>
-<main>
-<h1>Lumeria Studio</h1>
-<p>Estúdio independente que cria jogos ambientados em Lumeria, um planeta onde muitos povos convivem e onde a Tormenta mudou tudo.</p>
-<p class="mut">Independent game studio making games set in Lumeria, a planet of many peoples changed forever by the Storm.</p>
+<header class="topo"><div class="largura">
+  <a class="marca" href="./"><img class="px" src="assets/img/personagens/aeli.png" alt="">Lumeria Studio</a>
+  <nav><a href="#jogos">Jogos</a><a href="#lumeria">O mundo</a><a href="#contato">Contato</a></nav>
+</div></header>
 
-<h2 id="jogos">Jogos / Games</h2>
-<div class="card">
-<h3 style="margin-top:0">GlimmerBorn: A Tormenta</h3>
-<p>Android · Ação e sobrevivência / Action survival</p>
-<p><a href="glimmerborn/">Página do jogo</a> · <a href="glimmerborn/privacidade/">Política de Privacidade</a> · <a href="glimmerborn/excluir-dados/">Excluir dados</a></p>
-</div>
-<div class="card">
-<h3 style="margin-top:0">RPG de Lumeria (PC)</h3>
-<p class="mut">Em desenvolvimento / In development.</p>
-</div>
+<section class="capa">
+  <img class="fundo" src="assets/img/cenas/lumeria.png" alt="">
+  <div class="largura">
+    <p class="mut" style="margin:0 0 8px;font-family:'Pixelify Sans',monospace;color:var(--ar)">Estúdio independente · Independent studio</p>
+    <h1>Lumeria Studio</h1>
+    <p class="chamada">Jogos em pixel art ambientados em Lumeria, um planeta de muitos povos, onde os Consagrados prendem quem resiste dentro de vitrais.</p>
+    <div class="acoes"><a class="botao" href="#jogos">Ver os jogos</a><a class="botao fantasma" href="glimmerborn/">GlimmerBorn</a></div>
+  </div>
+</section>
+<div class="vitral"></div>
 
-<h2 id="contato">Contato / Contact</h2>
-<p><a href="mailto:studioslumeria@gmail.com">studioslumeria@gmail.com</a></p>
-</main>
-<footer>© 2026 Lumeria Studio</footer>
+<section class="bloco" id="jogos"><div class="largura">
+  <h2>Jogos</h2>
+  <div class="grade g2">
+    <a class="moldura cartao" href="glimmerborn/" style="text-decoration:none;color:inherit"><div class="dentro">
+      <img class="px" src="assets/img/cenas/perseguicao.png" alt="Aeli fugindo de Kestra no céu ao entardecer" style="width:100%">
+      <div class="texto">
+        <span class="selo">Android · em breve</span>
+        <h3>GlimmerBorn: A Tormenta</h3>
+        <p style="margin:0">Ação e sobrevivência: escolha um herói, enfrente as hordas dos Consagrados e reviva as batalhas guardadas no brilho.</p>
+      </div>
+    </div></a>
+    <div class="moldura prata cartao"><div class="dentro">
+      <img class="px" src="assets/img/cenas/rosacea.png" alt="O grupo diante da Grande Rosácea, um enorme vitral" style="width:100%">
+      <div class="texto">
+        <span class="selo">PC · em desenvolvimento</span>
+        <h3>GlimmerBorn (RPG)</h3>
+        <p style="margin:0">A jornada completa de Aeli por Lumeria, de povo em povo, para libertar quem virou vidro.</p>
+      </div>
+    </div></div>
+  </div>
+</div></section>
+
+<section class="bloco escuro" id="lumeria"><div class="largura lado">
+  <div>
+    <h2>O mundo de Lumeria</h2>
+    <p>Corujas, nagas, lobos-guará, rinocerontes, aves de rapina e humanos dividiam Lumeria em paz. Então os Consagrados aprenderam a transformar gente em vitral, e chamaram isso de Bênção.</p>
+    <p>Cada jogo da Lumeria Studio conta um pedaço dessa história, sempre em pixel art feita à mão com cuidado.</p>
+  </div>
+  <div class="moldura brasa"><img class="px" src="assets/img/cenas/ritual.png" alt="O ritual que causou a Tormenta"></div>
+</div></section>
+
+<section class="bloco" id="contato"><div class="largura">
+  <h2>Contato</h2>
+  <p>Dúvidas, suporte ou parcerias · Questions, support or partnerships:<br>
+  <a href="mailto:studioslumeria@gmail.com">studioslumeria@gmail.com</a></p>
+</div></section>
+
+<footer class="rodape"><div class="largura">
+  <span>© 2026 Lumeria Studio</span>
+  <span><a href="glimmerborn/privacidade/">Privacidade (GlimmerBorn)</a> · <a href="glimmerborn/excluir-dados/">Excluir dados</a></span>
+</div></footer>
 </body></html>

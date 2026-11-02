@@ -1,22 +1,140 @@
 <!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>GlimmerBorn: A Tormenta</title>
-<meta name="description" content="GlimmerBorn: A Tormenta, jogo de ação e sobrevivência para Android da Lumeria Studio.">
+<meta name="description" content="GlimmerBorn: A Tormenta, jogo de ação e sobrevivência em pixel art para Android, da Lumeria Studio.">
+<meta property="og:title" content="GlimmerBorn: A Tormenta"><meta property="og:image" content="https://lumeriastudio.github.io/assets/img/cenas/perseguicao.png">
+<link rel="icon" href="../assets/img/personagens/aeli.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Pixelify+Sans:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/estilo.css"></head>
 <body>
-<header><a class="marca" href="../">Lumeria Studio</a><nav><a href="privacidade/">Privacidade</a><a href="excluir-dados/">Excluir dados</a></nav></header>
-<main>
-<h1>GlimmerBorn: A Tormenta</h1>
-<p>A Tormenta caiu sobre Lumeria. Escolha um herói, enfrente ondas de Consagrados e sobreviva o máximo que puder.</p>
-<p class="mut">The Storm has fallen on Lumeria. Pick a hero, face waves of the Consecrated and survive as long as you can.</p>
-<!-- TODO: link da Play Store, imagens e vídeo quando o jogo estiver publicado -->
-<div class="card">
-<p style="margin:0"><strong>Plataforma:</strong> Android (Google Play)<br>
-<strong>Desenvolvedor:</strong> Lumeria Studio<br>
-<strong>Suporte:</strong> <a href="mailto:studioslumeria@gmail.com">studioslumeria@gmail.com</a></p>
-</div>
-<p><a href="privacidade/">Política de Privacidade / Privacy Policy</a><br>
-<a href="excluir-dados/">Excluir seus dados / Delete your data</a></p>
-</main>
-<footer>© 2026 Lumeria Studio</footer>
+<header class="topo"><div class="largura">
+  <a class="marca" href="./"><img class="px" src="../assets/img/personagens/aeli.png" alt="">GlimmerBorn</a>
+  <nav><a href="#historia">História</a><a href="#personagens">Personagens</a><a href="#mundo">Mundo</a><a href="#jogar">Como jogar</a><a href="../">Lumeria Studio</a></nav>
+</div></header>
+
+<section class="capa">
+  <img class="fundo" src="../assets/img/cenas/perseguicao.png" alt="">
+  <div class="largura capa-heroi">
+    <div>
+      <p class="mut" style="margin:0 0 8px;font-family:'Pixelify Sans',monospace;color:var(--ar)">Android · Ação e sobrevivência</p>
+      <h1>GlimmerBorn:<br>A Tormenta</h1>
+      <p class="chamada">Os Consagrados transformaram Lumeria em vitral. Aeli, a coruja que carrega o brilho, enfrenta as hordas deles para libertar quem ficou preso no vidro.</p>
+      <div class="acoes">
+        <span class="botao" aria-disabled="true">Em breve no Google Play</span>
+        <a class="botao fantasma" href="#historia">Conhecer a história</a>
+      </div>
+    </div>
+    <div class="moldura heroi-grande"><div class="dentro"><img class="px" src="../assets/img/personagens/aeli.png" alt="Aeli, uma jovem coruja de asas brancas com uma bolsa de couro"></div></div>
+  </div>
+</section>
+<div class="vitral"></div>
+
+<section class="bloco" id="historia"><div class="largura">
+  <div class="lado">
+    <div>
+      <h2>A história</h2>
+      <p>Um dia, pessoas, bichos e lugares de Lumeria viraram <strong>vitral</strong>: mosaicos de vidro colorido, congelados no instante em que foram atingidos. Ninguém morreu. Estão presos ali dentro, conscientes.</p>
+      <p>Quem fez isso foram <strong>os Consagrados</strong>, fanáticos liderados pelo Primaz <strong>Varek</strong>. Eles chamam a vitrificação de <em>Bênção</em> e acreditam sinceramente que estão salvando o mundo do sofrimento.</p>
+      <p><strong>Aeli</strong> é o novo <strong>Glimmer Born</strong>, aquele em quem o brilho renasce. Ao lado de Tarn e de outros que vai libertando pelo caminho, ele aprende a quebrar o vidro e trazer a cor de volta.</p>
+    </div>
+    <div class="moldura prata"><figure class="dentro">
+      <img class="px" src="../assets/img/cenas/nina.png" alt="Nina presa num vitral na beira do lago">
+      <figcaption><strong>A Bênção.</strong> Quem resiste aos Consagrados vira vidro, mas continua lá dentro.</figcaption>
+    </figure></div>
+  </div>
+  <div class="lado inv" style="margin-top:40px">
+    <div>
+      <h3 style="font-size:1.5rem;color:var(--ouro)">Ecos da Tormenta</h3>
+      <p>O brilho guarda lembranças das lutas contra os Consagrados. Em <strong>A Tormenta</strong>, você revive esses ecos: escolhe um herói, entra num mapa de Lumeria e resiste a ondas e mais ondas de soldados.</p>
+      <p>Os soldados nunca morrem, eles são <strong>Derrotados</strong>. Os heróis lutam para libertar, não para matar.</p>
+    </div>
+    <div class="moldura brasa"><figure class="dentro">
+      <img class="px" src="../assets/img/cenas/ritual.png" alt="O ritual da Tormenta, com raios e chamas">
+      <figcaption><strong>A Tormenta.</strong> O ritual que mudou o destino dos povos de Lumeria.</figcaption>
+    </figure></div>
+  </div>
+</div></section>
+
+<section class="bloco escuro" id="personagens"><div class="largura">
+  <h2>Personagens</h2>
+  <div class="grade g4">
+    <div class="moldura personagem"><div class="dentro">
+      <div class="retrato"><img class="px" src="../assets/img/personagens/aeli.png" alt="Aeli"></div>
+      <h3>Aeli</h3><div class="povo">Coruja · Ar</div>
+      <p>O Glimmer Born. Curioso e leve, luta só com o próprio vento.</p>
+    </div></div>
+    <div class="moldura personagem"><div class="dentro">
+      <div class="retrato vazio" title="Retrato em breve">?</div>
+      <h3>Tarn</h3><div class="povo">Humano · Força</div>
+      <p>Guerreiro teimoso de machado e bumerangue. Quer libertar a irmã, Nina.</p>
+    </div></div>
+    <div class="moldura personagem"><div class="dentro">
+      <div class="retrato"><img class="px" src="../assets/img/personagens/selara.png" alt="Selara"></div>
+      <h3>Selara</h3><div class="povo">Naga · Água</div>
+      <p>Curandeira gentil do lago, com uma raiva guardada dos Consagrados.</p>
+    </div></div>
+    <div class="moldura personagem"><div class="dentro">
+      <div class="retrato"><img class="px" src="../assets/img/personagens/doro.png" alt="Doro"></div>
+      <h3>Doro</h3><div class="povo">Rinoceronte · Terra</div>
+      <p>Grande, calada e séria, com manoplas de pedra. Ri alto quando ri.</p>
+    </div></div>
+    <div class="moldura personagem"><div class="dentro">
+      <div class="retrato"><img class="px" src="../assets/img/personagens/oren.png" alt="Oren"></div>
+      <h3>Oren</h3><div class="povo">Lobo-guará · Raio</div>
+      <p>O mentor mais velho. Conta histórias que nunca terminam, sempre com chá.</p>
+    </div></div>
+    <div class="moldura personagem"><div class="dentro">
+      <div class="retrato"><img class="px" src="../assets/img/personagens/asher.png" alt="Asher"></div>
+      <h3>Asher</h3><div class="povo">Lobo-guará · Fogo</div>
+      <p>Explosivo e marcado pelo próprio fogo. Ainda não se sabe de que lado está.</p>
+    </div></div>
+    <div class="moldura brasa personagem"><div class="dentro">
+      <div class="retrato"><img class="px" src="../assets/img/personagens/kestra.png" alt="Kestra"></div>
+      <h3>Kestra</h3><div class="povo">Altaneira · Consagrados</div>
+      <p>Perdeu o voo na Tormenta. Agora caça Aeli montada no falcão Fagulha.</p>
+    </div></div>
+    <div class="moldura brasa personagem"><div class="dentro">
+      <div class="retrato"><img class="px" src="../assets/img/personagens/varek.png" alt="Varek"></div>
+      <h3>Varek</h3><div class="povo">Altaneiro · Primaz</div>
+      <p>Líder dos Consagrados. Chama de Bênção o vidro que prende os povos.</p>
+    </div></div>
+  </div>
+</div></section>
+
+<section class="bloco" id="mundo"><div class="largura">
+  <h2>O mundo</h2>
+  <div class="grade g3">
+    <div class="moldura"><figure class="dentro"><img class="px" src="../assets/img/cenas/mirante.png" alt="Mirante dos Ventos vitrificado"><figcaption><strong>Mirante dos Ventos.</strong> O lar das corujas, tomado pelo vidro.</figcaption></figure></div>
+    <div class="moldura"><figure class="dentro"><img class="px" src="../assets/img/cenas/planicies.png" alt="Planícies Douradas com carroças"><figcaption><strong>Planícies Douradas.</strong> Por onde passam as carroças dos Consagrados.</figcaption></figure></div>
+    <div class="moldura"><figure class="dentro"><img class="px" src="../assets/img/cenas/catedral.png" alt="Catedral Branca no alto de um penhasco"><figcaption><strong>A Catedral Branca.</strong> O coração dos Consagrados.</figcaption></figure></div>
+    <div class="moldura"><figure class="dentro"><img class="px" src="../assets/img/cenas/soren.png" alt="Um espírito de águia aparece para Aeli numa caverna de gelo"><figcaption><strong>O guia.</strong> Um brilho antigo aparece para Aeli no gelo.</figcaption></figure></div>
+    <div class="moldura"><figure class="dentro"><img class="px" src="../assets/img/cenas/rosacea.png" alt="A Grande Rosácea"><figcaption><strong>A Grande Rosácea.</strong> O maior vitral de Lumeria.</figcaption></figure></div>
+    <div class="moldura"><figure class="dentro"><img class="px" src="../assets/img/cenas/lumeria.png" alt="O planeta Lumeria visto do espaço"><figcaption><strong>Lumeria.</strong> Um planeta inteiro, com muitos povos ainda por conhecer.</figcaption></figure></div>
+  </div>
+</div></section>
+
+<section class="bloco escuro" id="jogar"><div class="largura lado">
+  <div>
+    <h2>Como jogar</h2>
+    <ol class="passos">
+      <li><strong>Escolha um herói e um mapa.</strong> Cada herói tem o próprio ataque.</li>
+      <li><strong>Mova com um dedo.</strong> Os ataques saem sozinhos.</li>
+      <li><strong>Suba de nível e escolha cartas</strong> com poderes, itens e fusões.</li>
+      <li><strong>Sobreviva à Tormenta</strong> e libere novos heróis, mapas e segredos.</li>
+    </ol>
+  </div>
+  <div class="moldura"><img class="px" src="../assets/img/cenas/grupo.png" alt="Os heróis reunidos"></div>
+</div></section>
+
+<section class="bloco"><div class="largura" style="text-align:center">
+  <h2>Em breve no Google Play</h2>
+  <p>Suporte: <a href="mailto:studioslumeria@gmail.com">studioslumeria@gmail.com</a></p>
+  <p class="mut">Pixel art, action survival game for Android. Coming soon to Google Play.</p>
+</div></section>
+
+<footer class="rodape"><div class="largura">
+  <span>© 2026 Lumeria Studio</span>
+  <span><a href="privacidade/">Política de Privacidade / Privacy Policy</a> · <a href="excluir-dados/">Excluir dados / Delete data</a></span>
+</div></footer>
 </body></html>
