@@ -132,3 +132,8 @@ hr{border:0;height:12px;margin:40px 0;background:repeating-linear-gradient(90deg
 @keyframes respira{0%,100%{transform:scale(1,1)}50%{transform:scale(1.015,1.04) translateY(-1px)}}
 .personagem:nth-child(3n) .respira{animation-delay:-.8s}.personagem:nth-child(3n+1) .respira{animation-delay:-1.6s}
 @media (prefers-reduced-motion:reduce){.respira{animation:none}}
+/* Animações de parado com ação (PixelLab), folha horizontal de quadros 168px */
+.anim{--w:168px;--n:9;--d:1.4s;width:var(--w);height:var(--w);margin:0 auto;background-repeat:no-repeat;background-size:auto 100%;image-rendering:pixelated;animation:anim var(--d) steps(var(--n)) infinite}
+@keyframes anim{from{background-position:0 0}to{background-position:calc(var(--w) * var(--n) * -1) 0}}
+.personagem .retrato{width:168px;height:168px}
+@media (prefers-reduced-motion:reduce){.anim{animation:none}}
