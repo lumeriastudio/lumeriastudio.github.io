@@ -82,7 +82,7 @@ section.bloco.escuro{background:#0a0817aa;border-top:var(--px) solid #221c44;bor
 @media (min-width:820px){.capa-heroi{grid-template-columns:1.4fr 1fr}}
 .heroi-grande{max-width:320px;margin:0 auto}
 .heroi-grande .dentro{background:radial-gradient(circle at 50% 45%,#3a4f8a 0%,#1d1838 70%)}
-.heroi-grande img{animation:flutua 3.2s steps(8) infinite}
+.heroi-grande .sprite{animation:quadros8 1s steps(8) infinite}
 @keyframes flutua{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
 @media (prefers-reduced-motion:reduce){.heroi-grande img{animation:none}}
 
@@ -118,3 +118,12 @@ hr{border:0;height:12px;margin:40px 0;background:repeating-linear-gradient(90deg
 .rodape .largura{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between}
 .rodape a{color:var(--mut)}
 @media (max-width:640px){.topo{position:static}nav{gap:2px 14px}nav a{font-size:.95rem}}
+/* Sprites animados do jogo (folha horizontal de quadros 128px) */
+.sprite{--w:128px;width:var(--w);height:var(--w);background-repeat:no-repeat;background-size:auto 100%;image-rendering:pixelated;margin:0 auto}
+.sprite.aeli{background-image:url(img/jogo/aeli_parado_folha.png);animation:quadros8 1s steps(8) infinite}
+.sprite.tarn{background-image:url(img/jogo/tarn_parado_folha.png);animation:quadros4 .8s steps(4) infinite}
+.sprite.x2{--w:256px}
+.sprite.x125{--w:160px}
+@keyframes quadros8{to{background-position:calc(var(--w) * -8) 0}}
+@keyframes quadros4{to{background-position:calc(var(--w) * -4) 0}}
+@media (prefers-reduced-motion:reduce){.sprite{animation:none}}
